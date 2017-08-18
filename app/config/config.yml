@@ -1,0 +1,9 @@
+database: 
+  adapter: "Mysql"
+  host: "127.0.0.1"
+  username: "root"
+  dbname: "Line"
+  password: "Kusoinlol1532"
+redis: 
+  host: "127.0.0.1"
+  port: "6379"

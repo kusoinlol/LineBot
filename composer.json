@@ -1,0 +1,46 @@
+{
+    "name"       : "anthony/hsing",
+    "type"       : "project",
+    "description": "歡歌工具",
+    "authors"    : [
+        {
+            "name": "Anthony",
+            "email": "Anthony_hsiao@hiiir.com",
+            "role": "Developer"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS"
+        ],
+        "post-update-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS"
+        ]
+    },
+    "config": {
+        "bin-dir": "/usr/bin"
+    },
+    "keywords": ["api"],
+    "license" : "proprietary",
+    "minimum-stability": "dev",
+    "repositories": [],
+    "require": {
+        "linecorp/line-bot-sdk" :"*",
+        "jonnyw/php-phantomjs":"4.*"
+    },
+    "autoload": {},
+    "archive": {
+        "exclude": [
+            "!vendor",
+            "!node_modules",
+            "/tests",
+            "/build",
+            "/docs",
+            "/*.xml",
+            "/*.phar",
+            "/*.yml",
+            "/*.lock",
+            "/publish*.sh"
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+<script type="text/javascript">
+    
+var a = ["12345", "23456"];
+function c(n) {
+  for(var i in a) {
+    if(a[i].slice(2) == n) {
+      alert(a[i] + ":" + i);
+    }
+    else if(a[i].slice(2) != n) {
+      alert("no");
+    }
+  }
+}
+c(456);
+</script>
